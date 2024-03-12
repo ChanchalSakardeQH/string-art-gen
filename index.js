@@ -217,7 +217,7 @@ let graph = {
             .attr("width", "100vw")
             .attr("viewBox", [-this.width / 2, -this.height / 2, this.width, this.height])
         this.svg.append("g");
-        this.svg.attr("desc", "Created using michael-crum.com/string-art-gen");
+        this.svg.attr("desc", "Created using https://chanchalsakardeqh.github.io/string-art-gen/");
 
         let frame_path = this.svg.select("g")
             .append("circle")
@@ -312,7 +312,7 @@ let graph = {
         document.body.removeChild(element);
     },
     download_nail_seq() {
-        let output = `Generated using https://michael-crum.com/string-art-gen/\n${this.render_iter} connections in total\n\n`;
+        let output = `Generated using https://chanchalsakardeqh.github.io/string-art-gen/\n${this.render_iter} connections in total\n\n`;
         let len = this.thread_order.length;
         for (var i = 0; i < len; i++) {
             let thread = this.threads[this.thread_order[i]];
